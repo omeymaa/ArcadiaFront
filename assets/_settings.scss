@@ -4,7 +4,7 @@ $color-secondary: hsl(214, 71%, 24%);
 $color-accent: hsl(23, 100%, 24%);
 
 $color-bg-primary : hsl(171, 16%, 92%);
-$color-secondary: hsl(213, 23%, 92%);
+$color-bg-secondary: hsl(213, 23%, 92%);
 
 $color-light: hsl(0, 0%, 97%);
 $color-dark:hsl(0, 0%, 13%);
@@ -18,6 +18,14 @@ $font-family-text: "Open Sans", sans-serif;
     font-weight: 700;
 }
 
+// general style
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body { 
     font-family: $font-family-text;
+    font-size: 1.1rem; /*11px*/
 }

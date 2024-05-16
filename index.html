@@ -13,11 +13,34 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
-        Menu du site
-    </header>
+        <header class="navbar">
+            <div class="container navbar-expand-lg d-flex align-items-center justify-content-between py-2">
+                <div class="logo">
+                    <a href="/" class="">
+                     <img class="img-fluid" src="assets/img/Logo Arcadia.png" alt="Logo Arcadia">
+                    </a>
+                </div>
 
-    <main id="main-page">
+                <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-list"></i>
+                </button>
+                
+
+                <nav class="navbar-collapse collapse justify-content-end text-uppercase py-3" id="navbarScroll">
+                    <ul class="nav navbar-nav nav-pills">
+                        <li class="nav-item me-3"><a href="/le-parc" class="nav-link">Le parc</a></li>
+                        <li class="nav-item me-3"><a href="/les-animaux" class="nav-link">Les animaux</a></li>
+                        <li class="nav-item me-3"><a href="/infos-pratiques" class="nav-link">Infos pratiques</a></li>
+                        <li class="nav-item me-3"><a href="/activites" class="nav-link">Activités</a></li>
+                        <li class="nav-item me-3"><a href="/contact" class="nav-link">Contact</a></li>
+                        <li class="nav-item"><a href="/connexion" class="nav-link">Connexion</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+
+    <main id="main-page" class="container">
         <!-- Le contenu du site sera injecté ici -->
     </main>
 
