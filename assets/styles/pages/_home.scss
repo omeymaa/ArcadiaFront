@@ -1,5 +1,4 @@
 h1 {
     color: $color-primary;
-    font-family: $font-family-title;
-    font-weight: 700;
+    @include titleBold;
 }
