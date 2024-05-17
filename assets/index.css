@@ -4,9 +4,36 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%; /* 1rem=10px */
+  position: relative;
+  min-height: 100%;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
-  font-size: 1.1rem; /*11px*/
+  font-size: 1.1rem; /* 11px */
+}
+body h1 {
+  font-size: 5rem;
+  color: hsl(214, 71%, 24%);
+  font-family: "Asap", sans-serif;
+  font-weight: 700;
+}
+body h2 {
+  font-size: 3.5rem;
+  color: hsl(214, 71%, 24%);
+  font-family: "Asap", sans-serif;
+  font-weight: 700;
+}
+body h3 {
+  font-size: 2rem;
+  font-family: "Asap", sans-serif;
+  font-weight: 700;
+}
+
+main {
+  margin-bottom: 250px;
 }
 
 header {
@@ -42,8 +69,17 @@ header .custom-toggler {
   font-size: 40px;
 }
 
-h1 {
-  color: hsl(167, 100%, 15%);
-  font-family: "Asap", sans-serif;
-  font-weight: 700;
+footer {
+  background: hsl(167, 100%, 15%);
+  color: hsl(0, 0%, 97%);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+footer a {
+  color: hsl(0, 0%, 97%);
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
 }/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,18 @@
+footer {
+    background: $color-primary;
+    color: $color-light;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    a {
+        color: $color-light;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+
+}
