@@ -82,4 +82,15 @@ footer a {
 }
 footer a:hover {
   text-decoration: underline;
+}
+
+.hero {
+  background: url("/assets/img/zebres.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+}
+.hero h1 {
+  color: hsl(0, 0%, 97%);
 }/*# sourceMappingURL=index.css.map */
