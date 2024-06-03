@@ -18,6 +18,11 @@ $font-family-text: "Open Sans", sans-serif;
     font-weight: 700;
 }
 
+@mixin h2Style {
+    color: $color-primary;
+    font-size: 3.5rem;
+}
+
 // general style
 * {
     padding: 0;
@@ -42,9 +47,8 @@ body {
     }
 
     h2 {
-        font-size: 3.5rem;
-        color: $color-secondary;
         @include titleBold;
+        @include h2Style;
     }
 
     h3 {

@@ -1,4 +1,4 @@
-.hero {
+#hero {
     background: url('/assets/img/zebres.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -7,5 +7,44 @@
 
     h1 {
         color: $color-light;
+    }
+}
+
+#additionnalinfo {
+
+    .card-info {
+            box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.10);
+    }
+
+    a {
+        color: $color-secondary;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .arcadiainfo1 {
+        padding-top: 8rem;
+        margin-bottom: 6rem;
+
+        p {
+            font-size: 1.8rem;
+        }
+
+        .today {
+            color : $color-accent;
+        }
+    }
+
+    .arcadiainfo2 {
+        padding-bottom: 8rem;
+
+        .btn {
+            background-color: $color-accent;
+            border: $color-accent;
+            color: $color-light;
+        }
     }
 }
