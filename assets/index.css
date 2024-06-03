@@ -122,4 +122,14 @@ footer a:hover {
   background-color: hsl(23, 100%, 24%);
   border: hsl(23, 100%, 24%);
   color: hsl(0, 0%, 97%);
+}
+
+#inconsinfos {
+  background-color: hsl(213, 23%, 92%);
+}
+#inconsinfos h3 {
+  color: hsl(214, 71%, 24%);
+}
+#inconsinfos p {
+  color: hsl(214, 71%, 24%);
 }/*# sourceMappingURL=index.css.map */
