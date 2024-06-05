@@ -89,7 +89,6 @@ footer a:hover {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  min-height: 100vh;
 }
 #hero h1 {
   color: hsl(0, 0%, 97%);
@@ -132,4 +131,26 @@ footer a:hover {
 }
 #inconsinfos p {
   color: hsl(214, 71%, 24%);
+}
+
+#habitats .card-habitat {
+  position: relative;
+}
+#habitats .card-habitat h3 {
+  font-size: 3.5rem;
+  color: hsl(0, 0%, 97%);
+  position: absolute;
+  top: 80%;
+  left: 5%;
+}
+#habitats .card-habitat i {
+  font-size: 3.5rem;
+  color: hsl(0, 0%, 97%);
+  position: absolute;
+  top: 78%;
+  right: 5%;
+}
+#habitats .card-habitat i:hover {
+  scale: 1.2;
+  transition: all 0.3s;
 }/*# sourceMappingURL=index.css.map */

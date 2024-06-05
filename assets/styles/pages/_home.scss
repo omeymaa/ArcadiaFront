@@ -3,7 +3,6 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    min-height: 100vh;
 
     h1 {
         color: $color-light;
@@ -58,5 +57,34 @@
 
     p {
         color: $color-secondary;
+    }
+}
+
+#habitats {
+
+    .card-habitat {
+        position: relative;
+
+        h3 {
+            font-size: 3.5rem;
+            color: $color-light;
+            position: absolute;
+            top:80%;
+            left:5%;
+        }
+
+        i {
+            font-size: 3.5rem;
+            color: $color-light;
+            position: absolute;
+            top:78%;
+            right:5%;
+
+            &:hover {
+                scale: 1.2;
+                transition: all 0.3s;
+
+            }
+        }
     }
 }
