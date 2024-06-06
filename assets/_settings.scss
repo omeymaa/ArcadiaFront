@@ -27,6 +27,13 @@ $font-family-text: "Open Sans", sans-serif;
     background-color: $color-accent;
     border: $color-accent;
     color: $color-light;
+    padding: 1rem;
+
+    &:hover {
+        scale: 1.1;
+        transition: all 0.3s;
+
+    }
 }
 
 
@@ -39,11 +46,10 @@ $font-family-text: "Open Sans", sans-serif;
 
 html {
     font-size: 62.5%; /* 1rem=10px */
-    position: relative;
-    min-height: 100%;
 }
 
 body { 
+    position: relative;
     font-family: $font-family-text;
     font-size: 1.4rem; /* 14px */
 
@@ -62,8 +68,4 @@ body {
         font-size: 2rem;
         @include titleBold;
     }
-}
-
-main {
-    margin-bottom: 600px;
 }

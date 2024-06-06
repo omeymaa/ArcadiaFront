@@ -15,6 +15,8 @@
             box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.10);
     }
 
+    .arcadiainfo1 {
+
     a {
         color: $color-secondary;
         text-decoration: none;
@@ -23,10 +25,6 @@
             text-decoration: underline;
         }
     }
-
-    .arcadiainfo1 {
-        padding-top: 8rem;
-        margin-bottom: 6rem;
 
         p {
             font-size: 1.8rem;
@@ -38,8 +36,6 @@
     }
 
     .arcadiainfo2 {
-        padding-bottom: 8rem;
-
         .btn {
             @include btnAccent;
         }

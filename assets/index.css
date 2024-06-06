@@ -6,11 +6,10 @@
 
 html {
   font-size: 62.5%; /* 1rem=10px */
-  position: relative;
-  min-height: 100%;
 }
 
 body {
+  position: relative;
   font-family: "Open Sans", sans-serif;
   font-size: 1.4rem; /* 14px */
 }
@@ -30,10 +29,6 @@ body h3 {
   font-size: 2rem;
   font-family: "Asap", sans-serif;
   font-weight: 700;
-}
-
-main {
-  margin-bottom: 600px;
 }
 
 header {
@@ -73,7 +68,6 @@ footer {
   background: hsl(167, 100%, 15%);
   color: hsl(0, 0%, 97%);
   position: absolute;
-  bottom: 0;
   width: 100%;
 }
 footer a {
@@ -97,16 +91,12 @@ footer a:hover {
 #additionnalinfo .card-info {
   box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.1);
 }
-#additionnalinfo a {
+#additionnalinfo .arcadiainfo1 a {
   color: hsl(214, 71%, 24%);
   text-decoration: none;
 }
-#additionnalinfo a:hover {
+#additionnalinfo .arcadiainfo1 a:hover {
   text-decoration: underline;
-}
-#additionnalinfo .arcadiainfo1 {
-  padding-top: 8rem;
-  margin-bottom: 6rem;
 }
 #additionnalinfo .arcadiainfo1 p {
   font-size: 1.8rem;
@@ -114,13 +104,15 @@ footer a:hover {
 #additionnalinfo .arcadiainfo1 .today {
   color: hsl(23, 100%, 24%);
 }
-#additionnalinfo .arcadiainfo2 {
-  padding-bottom: 8rem;
-}
 #additionnalinfo .arcadiainfo2 .btn {
   background-color: hsl(23, 100%, 24%);
   border: hsl(23, 100%, 24%);
   color: hsl(0, 0%, 97%);
+  padding: 1rem;
+}
+#additionnalinfo .arcadiainfo2 .btn:hover {
+  scale: 1.1;
+  transition: all 0.3s;
 }
 
 #inconsinfos {
@@ -172,6 +164,11 @@ footer a:hover {
   background-color: hsl(23, 100%, 24%);
   border: hsl(23, 100%, 24%);
   color: hsl(0, 0%, 97%);
+  padding: 1rem;
+}
+#advice .btn:hover {
+  scale: 1.1;
+  transition: all 0.3s;
 }
 #advice .card-advice {
   background-color: hsl(213, 23%, 92%);
@@ -189,4 +186,9 @@ footer a:hover {
   background-color: hsl(23, 100%, 24%);
   border: hsl(23, 100%, 24%);
   color: hsl(0, 0%, 97%);
+  padding: 1rem;
+}
+#newsletter .btn:hover {
+  scale: 1.1;
+  transition: all 0.3s;
 }/*# sourceMappingURL=index.css.map */
