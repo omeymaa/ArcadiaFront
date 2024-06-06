@@ -12,7 +12,7 @@ html {
 
 body {
   font-family: "Open Sans", sans-serif;
-  font-size: 1.1rem; /* 11px */
+  font-size: 1.4rem; /* 14px */
 }
 body h1 {
   font-size: 5rem;
@@ -33,7 +33,7 @@ body h3 {
 }
 
 main {
-  margin-bottom: 250px;
+  margin-bottom: 600px;
 }
 
 header {
@@ -153,4 +153,40 @@ footer a:hover {
 #habitats .card-habitat i:hover {
   scale: 1.2;
   transition: all 0.3s;
+}
+
+#services .card-service {
+  background-color: hsl(214, 71%, 24%);
+}
+#services .card-service .card-content {
+  color: white;
+}
+#services .card-service .card-content a {
+  color: white;
+}
+#services .card-service .card-content a:hover {
+  text-decoration: none;
+}
+
+#advice .btn {
+  background-color: hsl(23, 100%, 24%);
+  border: hsl(23, 100%, 24%);
+  color: hsl(0, 0%, 97%);
+}
+#advice .card-advice {
+  background-color: hsl(213, 23%, 92%);
+  color: hsl(214, 71%, 24%);
+}
+#advice .card-advice i {
+  font-size: 2rem;
+}
+
+#newsletter {
+  background-color: hsl(171, 16%, 92%);
+  color: hsl(167, 100%, 15%);
+}
+#newsletter .btn {
+  background-color: hsl(23, 100%, 24%);
+  border: hsl(23, 100%, 24%);
+  color: hsl(0, 0%, 97%);
 }/*# sourceMappingURL=index.css.map */

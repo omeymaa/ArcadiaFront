@@ -23,6 +23,12 @@ $font-family-text: "Open Sans", sans-serif;
     font-size: 3.5rem;
 }
 
+@mixin btnAccent {
+    background-color: $color-accent;
+    border: $color-accent;
+    color: $color-light;
+}
+
 
 // general style
 * {
@@ -39,7 +45,7 @@ html {
 
 body { 
     font-family: $font-family-text;
-    font-size: 1.1rem; /* 11px */
+    font-size: 1.4rem; /* 14px */
 
     h1 {
         font-size: 5rem;
@@ -59,5 +65,5 @@ body {
 }
 
 main {
-    margin-bottom: 250px;
+    margin-bottom: 600px;
 }
