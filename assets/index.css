@@ -30,6 +30,9 @@ body h3 {
   font-family: "Asap", sans-serif;
   font-weight: 700;
 }
+body .breadcrumb-item a {
+  color: hsl(23, 100%, 24%);
+}
 
 header {
   background: hsl(167, 100%, 15%);
@@ -190,5 +193,34 @@ footer a:hover {
 }
 #newsletter .btn:hover {
   scale: 1.1;
+  transition: all 0.3s;
+}
+
+#jumbotron {
+  background: hsl(213, 23%, 92%);
+}
+#jumbotron p {
+  color: hsl(214, 71%, 24%);
+}
+
+#animals .card-habitat {
+  position: relative;
+}
+#animals .card-habitat h3 {
+  font-size: 3.5rem;
+  color: hsl(0, 0%, 97%);
+  position: absolute;
+  top: 80%;
+  left: 5%;
+}
+#animals .card-habitat i {
+  font-size: 3.5rem;
+  color: hsl(0, 0%, 97%);
+  position: absolute;
+  top: 78%;
+  right: 5%;
+}
+#animals .card-habitat i:hover {
+  scale: 1.2;
   transition: all 0.3s;
 }/*# sourceMappingURL=index.css.map */

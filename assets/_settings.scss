@@ -68,4 +68,8 @@ body {
         font-size: 2rem;
         @include titleBold;
     }
+
+    .breadcrumb-item a {
+        color: $color-accent;
+    }
 }
