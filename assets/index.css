@@ -203,6 +203,24 @@ footer a:hover {
   color: hsl(214, 71%, 24%);
 }
 
+#cta-habitat .content-cta {
+  background-color: hsl(214, 71%, 24%);
+}
+#cta-habitat h2 {
+  color: hsl(0, 0%, 97%);
+}
+
+#cta-habitat .btn {
+  background-color: hsl(0, 0%, 97%);
+  border: hsl(0, 0%, 97%);
+  color: hsl(214, 71%, 24%);
+  padding: 1rem;
+}
+#cta-habitat .btn:hover {
+  scale: 1.1;
+  transition: all 0.3s;
+}
+
 #animals .card-habitat {
   position: relative;
 }

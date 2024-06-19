@@ -1,0 +1,14 @@
+#cta-habitat {
+    .btn {
+        background-color: $color-light;
+        border: $color-light;
+        color: $color-secondary;
+        padding: 1rem;
+    
+        &:hover {
+            scale: 1.1;
+            transition: all 0.3s;
+    
+        }
+    }
+}
