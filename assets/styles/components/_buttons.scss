@@ -12,3 +12,19 @@
         }
     }
 }
+
+.secondary-btn {
+    background-color: $color-secondary;
+    border: $color-secondary;
+    color: $color-light;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 1rem;
+
+    &:hover {
+        transition: all 0.2s;
+        background-color: hsla(214, 71%, 24%, 0.950);
+        border: $color-secondary;
+        color: $color-light;
+    }
+}

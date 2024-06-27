@@ -221,6 +221,21 @@ footer a:hover {
   transition: all 0.3s;
 }
 
+.secondary-btn {
+  background-color: hsl(214, 71%, 24%);
+  border: hsl(214, 71%, 24%);
+  color: hsl(0, 0%, 97%);
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 1rem;
+}
+.secondary-btn:hover {
+  transition: all 0.2s;
+  background-color: hsla(214, 71%, 24%, 0.95);
+  border: hsl(214, 71%, 24%);
+  color: hsl(0, 0%, 97%);
+}
+
 #animals .card-habitat {
   position: relative;
 }
