@@ -51,7 +51,7 @@ html {
 body { 
     position: relative;
     font-family: $font-family-text;
-    font-size: 1.4rem; /* 14px */
+    font-size: 1.5rem; /* 15px */
 
     h1 {
         font-size: 5rem;
@@ -67,5 +67,9 @@ body {
     h3 {
         font-size: 2rem;
         @include titleBold;
+    }
+
+    .breadcrumb-item a {
+        color: $color-accent;
     }
 }
