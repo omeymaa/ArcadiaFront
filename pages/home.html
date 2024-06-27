@@ -166,7 +166,7 @@
     <div class="container">
         <div class="d-flex justify-content-between align-items-center pb-3">
             <h2>Les visiteurs témoignent</h2>
-            <a href="" class="btn btn-lg">Laisser un avis</a>
+            <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="btn btn-lg">Laisser un avis</button>
         </div>
         <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
     
@@ -202,6 +202,33 @@
         </div>
     </div>
 </section>
+
+<!-- Modal Rating -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="staticBackdropLabel">Racontez votre expérience</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form action="">
+                <div class="mb-3">
+                    <label for="nameInput" class="form-label">Prénom ou Pseudonyme</label>
+                    <input type="text" class="form-control form-control-lg" id="nameInput">
+                  </div>
+                  <div class="mb-3">
+                    <label for="ratingTextarea" class="form-label">Votre expérience au Parc</label>
+                    <textarea class="form-control" id="ratingTextarea" rows="5"></textarea>
+                  </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn secondary-btn">Laisser un avis</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 <!-- newsletter -->
 <section id="newsletter" class="py-5 mt-5">
