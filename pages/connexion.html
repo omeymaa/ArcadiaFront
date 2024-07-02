@@ -8,15 +8,16 @@
                         <p class="text-center mb-5">Espace salarié Arcadia</p>
                         <form>
                             <div class="mb-3">
-                                <label for="InputEmail" class="form-label">Email </label>
-                                <input type="email" class="form-control form-control-lg" id="InputEmail">
+                                <label for="inputEmail" class="form-label">Email </label>
+                                <input type="email" class="form-control form-control-lg" id="inputEmail">
                             </div>
                             <div class="mb-5">
-                                <label for="InputPassword" class="form-label">Mot de passe</label>
-                                <input type="password" class="form-control form-control-lg" id="InputPassword">
+                                <label for="inputPassword" class="form-label">Mot de passe</label>
+                                <input type="password" class="form-control form-control-lg" id="inputPassword">
+                                <div class="invalid-feedback fs-5">Votre mot de passe doit contenir 8 caracètres, une majuscule, un chiffre et un caractère spécial</div>
                             </div>
                             <div class="d-grid">
-                                <button type="submit" class="btn btn-lg secondary-btn">Se connecter</button>
+                                <button type="submit" class="btn btn-lg secondary-btn" id="validationLogin">Se connecter</button>
                             </div>
                         </form>
                         
