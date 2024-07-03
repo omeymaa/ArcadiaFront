@@ -10,6 +10,7 @@
                             <div class="mb-3">
                                 <label for="inputEmail" class="form-label">Email </label>
                                 <input type="email" class="form-control form-control-lg" id="inputEmail">
+                                <div class="invalid-feedback fs-5">Votre e-mail doit ressembler à : example@email.fr</div>
                             </div>
                             <div class="mb-5">
                                 <label for="inputPassword" class="form-label">Mot de passe</label>
@@ -17,7 +18,8 @@
                                 <div class="invalid-feedback fs-5">Votre mot de passe doit contenir 8 caracètres, une majuscule, un chiffre et un caractère spécial</div>
                             </div>
                             <div class="d-grid">
-                                <button type="submit" class="btn btn-lg secondary-btn" id="validationLogin">Se connecter</button>
+                                <button type="button" class="btn btn-lg secondary-btn" id="validationLogin">Se connecter</button>
+                                <div class="invalid-feedback fs-5 text-center">L'email et le mot de passe ne correspondent pas</div>
                             </div>
                         </form>
                         

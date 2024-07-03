@@ -1,4 +1,4 @@
-//Implémenter le JS de ma page
+//Vérification des champs
 const inputEmail = document.getElementById("inputEmail");
 const inputPassword = document.getElementById("inputPassword");
 const validationLogin = document.getElementById("validationLogin");
@@ -14,6 +14,8 @@ function validateForm(){
 
     if (EmailOk && PasswordOk) {
         validationLogin.disabled = false;
+        validationLogin.style.backgroundColor = '';
+        validationLogin.style.color = '';
     } else {
         validationLogin.disabled = true;
         validationLogin.style.backgroundColor = 'hsl(213, 23%, 92%)';
@@ -50,5 +52,28 @@ function validatePassword(input){
         input.classList.remove("is-valid");
         input.classList.add("is-invalid");
         return false;
+    }
+}
+
+//
+// Connexion/Déconnexion
+validationLogin.addEventListener("click", checkCredentials);
+
+function checkCredentials() {
+    // Appeler l'API pour verifier les credentials en BDD
+    if(inputEmail.value == "test@mail.Fr" && inputPassword.value == "Azerty69!") {
+        alert("Vous êtes connecté");
+        
+        // Récuperer le token
+        const token = "mljdsoifemiofmejfezoijmozgjgjremkspâ^zflkdshdi";
+
+        // Placer le token ci-dessus en cookies
+
+        window.location.replace("/");
+    } else {
+        inputEmail.classList.add("is-invalid");
+        inputPassword.classList.add("is-invalid");
+        validationLogin.classList.add("is-invalid");
+
     }
 }
