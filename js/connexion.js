@@ -61,14 +61,14 @@ validationLogin.addEventListener("click", checkCredentials);
 
 function checkCredentials() {
     // Appeler l'API pour verifier les credentials en BDD
-    if(inputEmail.value == "test@mail.Fr" && inputPassword.value == "Azerty69!") {
+    if(inputEmail.value == "example@email.fr" && inputPassword.value == "Azerty69!") {
         
         // Récuperer le token
         const token = "mljdsoifemiofmejfezoijmozgjgjremkspâ^zflkdshdi";
         setToken(token);
         // Placer le token ci-dessus en cookies
-
         window.location.replace("/");
+        
     } else {
         inputEmail.classList.add("is-invalid");
         inputPassword.classList.add("is-invalid");

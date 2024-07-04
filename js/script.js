@@ -1,18 +1,28 @@
-//
-// Gestion de la connexion
+const logoutBtn= document.getElementById("logout");
 const tokenCookieName = "accesstoken";
 
-function setToken(token){   // Placer le token en cookie
-    setCookie(tokenCookieName, token, 7); // Connecté pendant 7 jours
+logoutBtn.addEventListener("click", logout);
+
+// Fonction de déconnexion
+function logout() {
+    eraseCookie(tokenCookieName);
+    // Rediriger vers la page d'accueil ou une autre page après la déconnexion
+    window.location.reload(); 
 }
 
-function getToken(){
+// Fonction pour définir le token dans le cookie
+function setToken(token) {
+    setCookie(tokenCookieName, token, 7); // Cookie valide pendant 7 jours
+}
+
+// Fonction pour récupérer le token depuis le cookie
+function getToken() {
     return getCookie(tokenCookieName);
 }
 
 //
-// Méthodes pour les cookies
-function setCookie(name,value,days) {     // Placer un cookie
+// Fonction pour définir un cookie
+function setCookie(name,value,days) {    
 
     var expires = "";
     if (days) {
@@ -22,7 +32,9 @@ function setCookie(name,value,days) {     // Placer un cookie
     }
     document.cookie = name + "=" + (value || "")  + expires + "; path=/";
 }
-function getCookie(name) {     // Récuperer un cookie
+
+// Fonction pour récupérer la valeur d'un cookie 
+function getCookie(name) {     
     var nameEQ = name + "=";
     var ca = document.cookie.split(';');
     for(var i=0;i < ca.length;i++) {
@@ -33,12 +45,13 @@ function getCookie(name) {     // Récuperer un cookie
     return null;
 }
 
-function eraseCookie(name) {       // Supprimer un cookie 
+// Fonction pour supprimer un cookie
+function eraseCookie(name) {      
     document.cookie = name +'=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
 }
 
 //
-// Savoir si on est connecté
+// Fonction pour vérifier si l'utilisateur est connecté
 function isConnected(){
     if(getToken() == null || getToken == undefined){
         return false;
